@@ -1,0 +1,431 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>旧时光 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本站更新记录 更新记录 2023-01-19              增加「相册📷」页面              2023-01-13              增加Snackbar弹窗                           配置在线聊天再次失败(成功了，但是并没有塞进右下角的按钮里，不美观，又给去掉了)              2023-01-08">
+<meta property="og:type" content="website">
+<meta property="og:title" content="旧时光">
+<meta property="og:url" content="http://example.com/oldtime/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本站更新记录 更新记录 2023-01-19              增加「相册📷」页面              2023-01-13              增加Snackbar弹窗                           配置在线聊天再次失败(成功了，但是并没有塞进右下角的按钮里，不美观，又给去掉了)              2023-01-08">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2022-12-15T13:27:42.000Z">
+<meta property="article:modified_time" content="2023-01-19T12:30:46.000Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/oldtime/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '旧时光',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-01-19 20:30:46'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">旧时光</h1></div></header><main class="layout hide-aside" id="content-inner"><div id="page"><div id="article-container"><h1 id="本站更新记录"><a href="#本站更新记录" class="headerlink" title="本站更新记录"></a>本站更新记录</h1><br/>
+<div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>更新记录</p>
+</div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-01-19</p>
+</div></div><div class='timeline-item-content'><div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加「<a href="/gallery/">相册📷</a>」页面</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-01-13</p>
+</div></div><div class='timeline-item-content'><div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加Snackbar弹窗</p>
+            </div>
+<div class='checkbox times red checked'><input type="checkbox" checked="checked"/>
+            <p>配置在线聊天再次失败(成功了，但是并没有塞进右下角的按钮里，不美观，又给去掉了)</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-01-08</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>修复blockquote夜间模式字体颜色不明显</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>修复评论夜间模式颜色</p>
+            </div>
+<div class='checkbox plus blue checked'><input type="checkbox" checked="checked"/>
+            <p>新增起始页域名 <a target="_blank" rel="noopener" href="https://tt3.netlify.app/">tt3.netlify.app</a></p>
+            </div>
+<div class='checkbox minus yellow checked'><input type="checkbox" checked="checked"/>
+            <p>关闭「<a href="/charts/">统计📊</a>」页面，太拉性能了</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-01-07</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>修改 <code>[Blogroot]\themes\butterfly\scripts\helpers\page.js</code>，添加标签右上角文章数</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>blockquote添加圆角</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>美化链接样式</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-01-06</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>使用gulp压缩js文件</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>自定义控制台样式</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>优化「<a href="/charts/">统计📊</a>」页面</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>重新添加wowjs动画</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加测试页面<a href="/test/04/">04</a>，<a href="/test/05/">05</a>，<a href="/test/06/">06</a></p>
+            </div>
+<div class='checkbox minus yellow checked'><input type="checkbox" checked="checked"/>
+            <p>去除左下角音乐播放</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加公告栏🎉 欢迎信息 🎉</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>个人信息卡片悬浮彩带效果</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>个人信息卡片夜间模式增加背景图</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>美化右边滚动栏样式</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>美化页面圆角，边框</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加春节倒计时侧边栏🧨</p>
+            </div>
+<div class='checkbox plus blue checked'><input type="checkbox" checked="checked"/>
+            <p>增加新二级域名 <a target="_blank" rel="noopener" href="https://ttie.up.railway.app/">ttie.up.railway.app</a></p>
+            </div>
+<div class='checkbox plus blue checked'><input type="checkbox" checked="checked"/>
+            <p>增加新二级域名 <a target="_blank" rel="noopener" href="https://ttie.onrender.com/">ttie.onrender.com</a></p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-01-05</p>
+</div></div><div class='timeline-item-content'><div class='checkbox plus blue checked'><input type="checkbox" checked="checked"/>
+            <p>增加新二级域名 <a target="_blank" rel="noopener" href="https://ttie.netlify.app/">ttie.netlify.app</a></p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>折叠手机版菜单栏</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>使用gulp压缩html，css文件，进一步加快网站访问速度</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-01-04</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>侧边栏由左侧改为右侧</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>重新开放「<a href="/music/">音乐🎶</a>」页面</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-01-03</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>渐变色版权美化</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加「<a href="/note/">日记📓</a>」页面</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-01-02</p>
+</div></div><div class='timeline-item-content'><div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加信息卡片头像状态</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加网站恶搞标题</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加自定义右键</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加直达底部按钮</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>字数统计由k改为w</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>美化修改侧边栏，去除最新文章、分类、标签三个卡片，增加微博热搜卡片</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-12-21</p>
+</div></div><div class='timeline-item-content'><div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加「页面导航」<a target="_blank" rel="noopener" href="https://tt3.pages.dev/">https://tt3.pages.dev/</a></p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-12-15</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>整改菜单栏分类</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加「网站导航」页面，值得推荐的网站都添加到<a href="/nav/">网站导航</a>啦</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-12-15</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>压缩大量图片资源，增加文章封面图</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>更改分类为分级分类</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>菜单栏改为横向居中，取消删除搜索字样</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加「旧时光」页面，更新日志记录在<a href="/oldtime/">旧时光📜</a>啦</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-12-14</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>美化菜单栏和social卡片图标为动态图标</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-12-13</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>取消归档，分类，标签，关于页面的侧边栏显示</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>压缩index.css main.js utils.js等文件，优化加载速度</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加站点国家公祭日变灰</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加统计页面(有bug，且加载速度慢，目前只保留两个统计)</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-12-12</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>修复页面初加载时不显示文字的bug</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>压缩大部分css和js文件，优化网站加载速度(可以在2000ms内加载完了✌)</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-12-11</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>更新hexo 6.0.0 -&gt; 6.3.0</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>更新butterfly 4.1.0 -&gt; 4.5.0 <a href="/posts/2022/1211/428d/">更新详情</a></p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>重新恢复左下角音乐</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>优化左下角音乐布局，可以自动收入角落</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>优化所有图片链接（除头像），提升网站加载速度</p>
+            </div>
+<div class='checkbox blue checked'><input type="checkbox" checked="checked"/>
+            <p>今天是本站运行的第300天❤️！<a target="_blank" rel="noopener" href="https://3902d61a.ttie.pages.dev/">点击传送至这一天</a></p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-12-10</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>美化icon图标</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-12-8</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>美化字体</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>美化页面背景</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>更改鼠标样式</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>美化个人卡片</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>修改美化页脚样式</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加页面顶部进度条</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>完善关于页面，增加「说说」页面(仍在开发中)</p>
+            </div>
+<div class='checkbox blue checked'><input type="checkbox" checked="checked"/>
+            <p>加入萌 ICP 备案，备案号为：<a target="_blank" rel="noopener" href="https://icp.gov.moe/?keyword=20226535">萌ICP备 - 20226535号</a></p>
+            </div>
+<div class='checkbox minus yellow checked'><input type="checkbox" checked="checked"/>
+            <p>暂时停止部分音乐播放（经过测试发现，歌单音乐太多会增加页面访问时间，所有先暂停使用，保留部分音乐）</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-12-01 -&gt; 2022-12-7</p>
+</div></div><div class='timeline-item-content'><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>进一步美化博客</p>
+            </div>
+<div class='checkbox plus blue checked'><input type="checkbox" checked="checked"/>
+            <p>增加镜像站 <a target="_blank" rel="noopener" href="https://ttie.pages.dev/">https://ttie.pages.dev/</a> 提高页面访问速度</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加「音乐」页面🎶 &lt;- 2022-12-02</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加「随便逛逛」「留言板」等页面 &lt;- 2022-12-03</p>
+            </div>
+<div class='checkbox times red checked'><input type="checkbox" checked="checked"/>
+            <p>配置在线聊天失败 &lt;- 2022-12-03</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加左下角音乐 &lt;- 2022-12-03</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加评论表情包样式 &lt;- 2022-12-06</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加「看星星」 &lt;- 2022-12-07</p>
+            </div>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>更改文章唯一链接</p>
+            </div>
+<div class='checkbox cyan checked'><input type="checkbox" checked="checked"/>
+            <p>修改左下角音乐收入侧边栏</p>
+            </div>
+<div class='checkbox minus yellow checked'><input type="checkbox" checked="checked"/>
+            <p>去除部分js，减少渲染时间</p>
+            </div> 
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-04-05</p>
+</div></div><div class='timeline-item-content'><div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加评论系统</p>
+            </div>
+<div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>
+            <p>增加搜索系统</p>
+            </div>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-02-14</p>
+</div></div><div class='timeline-item-content'><div class="note success disabled"><p>正式建立本站🏡</p>
+</div>
+这段时间是博客搭建初期，没有做很详细的记录<br/>
+1. 更换主题为 Butterfly<br/>
+2. 完善 Butterfly 的基本配置项<br/>
+3. 随便写了几篇文章测试
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-02-13</p>
+</div></div><div class='timeline-item-content'><ol>
+<li>创建Github Page仓库</li>
+<li>配置好本地端 Node.js 环境，安装好 Hexo</li>
+<li>hexo d上传Github测试</li>
+</ol>
+</div></div></div>
+</div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

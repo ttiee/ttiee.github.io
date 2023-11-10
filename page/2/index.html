@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-11-10 23:36:56'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/12/11/09-hexo%E5%92%8Cbutterfly%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/" title="怎么更新hexo和butterfly">怎么更新hexo和butterfly</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-12-11T02:37:37.000Z" title="Created 2022-12-11 10:37:37">2022-12-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/butterfly/">butterfly</a></span></div><div class="content">看了一下butterfly的最新版，更新到4.5.1了而我的还是4.1.0,版本太老不太利于主题魔改，所以更新一下，顺便把npm和hexo也更新了一下在此做一下记录，以免以后出了bug不好恢复。同时也为以后更新做好参照。
+
+
+升级hexo参照教程http://t.csdn.cn/x46zf (2020年的，有点老了，其中npm域名好像切换了，不过我没有影响)
+在终端输入以下命令
+123456789101112131415161718# 使用淘宝源的 cnpm 替换 npmnpm install -g cnpm --registry=https://registry.npm.taobao.orgcnpm install -g cnpm                 # 升级 npmcnpm cache clean -f                 # 清除 npm 缓存===更新 hexo: 进入 blog 目录，执行如下命令=== # 更新 package.json 中的 hexo 及个插件版本cnpm install -g npm-check           # 检查之前安 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/12/09/08-%E8%AF%AD%E6%96%87%E6%96%87%E8%A8%80%E6%96%8764%E7%AF%87/" title="语文文言文64篇"><img class="post-bg" src="https://tt3.pages.dev/img/de/de_21.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="语文文言文64篇"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/09/08-%E8%AF%AD%E6%96%87%E6%96%87%E8%A8%80%E6%96%8764%E7%AF%87/" title="语文文言文64篇">语文文言文64篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-12-09T12:36:20.000Z" title="Created 2022-12-09 20:36:20">2022-12-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%AB%98%E8%80%83/">高考</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E9%AB%98%E8%80%83/%E8%AF%AD%E6%96%87/">语文</a></span></div><div class="content">初中关雎(诗经·周南)关关雎鸠，在河之洲。窈窕淑女，君子好逑。
+参差荇菜，左右流之。窈窕淑女，寤寐求之。
+求之不得，寤寐思服。优哉悠哉，辗转反侧。
+参差荇菜，左右采之。窈窕淑女，琴瑟友之。
+参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。
+蒹葭(诗经·秦风)蒹葭苍苍，白露为霜。所谓伊人，在水一方。
+溯洄从之，道阻且长。溯游从之，宛在水中央。
+蒹葭萋萋，白露未晞。所谓伊人，在水之湄。
+溯洄从之，道阻且跻。溯游从之，宛在水中坻。
+蒹葭采采，白露未已。所谓伊人，在水之涘。
+溯洄从之，道阻且右。溯游从之，宛在水中沚。
+观沧海(曹操)东临碣石，以观沧海。水何澹澹，山岛竦峙。树木丛生，百草丰茂。秋风萧瑟，洪波涌起。日月之行，若出其中;星汉灿烂，若出其里。幸甚至哉!歌以咏志。
+饮酒(陶渊明)结庐在人境，而无车马喧。问君何能尔?心远地自偏。
+采菊东篱下，悠然见南山。山气日夕佳，飞鸟相与还。
+此中有真意，欲辨已忘言。
+送杜少府之任蜀州(王勃)城阙辅三秦，风烟望五津。与君离别意，同是宦游人。
+海内存知己，天涯若比邻。无为在歧路，儿女共沾巾。
+次北固山下(王湾)客路青山外，行舟绿水前。潮平两岸阔，风正一帆悬。
+海日 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/12/02/07-gitee%E5%8D%9A%E5%AE%A2/" title="gitee博客"><img class="post-bg" src="https://tt3.pages.dev/img/blog/gitee.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="gitee博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/02/07-gitee%E5%8D%9A%E5%AE%A2/" title="gitee博客">gitee博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-12-02T04:22:56.000Z" title="Created 2022-12-02 12:22:56">2022-12-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/butterfly/">butterfly</a></span></div><div class="content">新的博客因为国内GitHub访问较慢，所以在gitee上又弄了一个博客这是gitee博客地址：https://ttie.gitee.io/
+Butterfly
+
+
+  
+  
+  gitee
+  博客
+  
+  
+  
+  
+
+
+
+博客镜像站在cloudflare上弄了一个镜像站，国内访问更快些地址：https://ttie.pages.dev/
+
+
+  
+  
+  镜像站
+  cloudflare镜像
+  
+  
+  
+  
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/04/09/06-%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/" title="推荐视频"><img class="post-bg" src="https://tt3.pages.dev/img/video/01.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="推荐视频"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/04/09/06-%E8%A7%86%E9%A2%91%E5%88%86%E4%BA%AB/" title="推荐视频">推荐视频</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-04-09T14:58:04.000Z" title="Created 2022-04-09 22:58:04">2022-04-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a></span></div><div class="content">视频分享泰勒级数极限问题物理动量π隐函数求导电和微积分有关Butterfly求和问题Butterfly求积问题Butterfly第一部分Butterfly第二部分Butterfly第三部分Butterfly一个关于π的神奇算法，看完也会对二项式定理和杨辉三角有一个更加深刻的理解ButterflyButterflyButterfly
+视频不断补充中
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/04/04/05-%E4%B8%89%E4%BD%99%E5%BC%A6%E5%AE%9A%E7%90%86/" title="三余弦定理"><img class="post-bg" src="https://tt3.pages.dev/img/math/01.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="三余弦定理"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/04/04/05-%E4%B8%89%E4%BD%99%E5%BC%A6%E5%AE%9A%E7%90%86/" title="三余弦定理">三余弦定理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-04-04T02:18:21.000Z" title="Created 2022-04-04 10:18:21">2022-04-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a></span></div><div class="content">引入在做有些数学题时，总是会遇到这种类似的题：
+如右图，点O是正方形纸片ABCD的中心，点E，F分别为AD，BC的中点，现沿对角线AC把纸片折成直二面角，则纸片折后∠EOF的大小为？
+不难想象，当OE和OF变化时，∠EOF也在变化。可以说，在二面角不变的情况下，∠EOF是由OE和OF与二面角的交线的夹角确定的
+因为OE和OF与二面角的交线的夹角是一定的，所以∠EOF自然是确定的，所以肯定是能算出来的。
+因此，会让人想到，有没有一个公式可以直接套用，直接算出来∠EOF的角度。
+三余弦定理这里引入一个模型，如图
+模型
+
+l1和l2在一个面内，记为平面M，l1和l3在另一个面内，记为平面N。l1，l2，l3交于O，l1⊥l2，l1⊥l3，λ为l2和l3的夹角，所以为二面角。射线OA在M中，射线OB在N中。OA与l1的夹角记为α，OB与l1的夹角记为β。OA与OB的夹角记为θ，求θ。
+结论：cosθ=cosαcosβ+sinαsinβcosλ 
+至于怎么推的，以后再说。（提示：勾股定理+余弦定理就可以推出来）
+应用对于上面那道题，α&#x3D;135º，β&#x3D;45º，λ&#x3D;90 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/02/26/04-24%E9%AD%94%E5%A1%94/" title="24魔塔"><img class="post-bg" src="https://tt3.pages.dev/img/24/01.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="24魔塔"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/26/04-24%E9%AD%94%E5%A1%94/" title="24魔塔">24魔塔</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-02-26T14:36:53.000Z" title="Created 2022-02-26 22:36:53">2022-02-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B8%B8%E6%88%8F/">游戏</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%B8%B8%E6%88%8F/%E7%BD%91%E9%A1%B5%E6%B8%B8%E6%88%8F/">网页游戏</a></span></div><div class="content"> 24层魔塔今天向大家推荐一个非常好玩的游戏——24层魔塔这里是网页版原版还有一个改版这里我玩的是改版，因为我先接触到的是改版，原版我还没玩
+介绍24层魔塔，算是一个非常经典的游戏了，是国内的第一部摩塔游戏，被称为“三原塔”之一。2003年出版的，非常老了，但是超级经典。
+这个游戏算是一个益智游戏，需要你不停的计算。
+这个24魔塔，是三原塔中最简单的。建议不要先玩其的，因为实在太难。
+我简单的介绍一下我的游戏历程
+游戏历程第一次第一次玩这个游戏，并不知道有多难，就简单的玩了一下，结果发现，就卡在第八关了(啥都干不了)。所以第一次也就失败了
+第二次上一次失败后，我又重新创一个存档重新玩。这次严谨一点，也是一口气打到21层。但是我忘记存档了，到了21层后，不把怪打掉，他是下不了楼的。
+又失算了！
+第三次这次吸取上次的教训，中间不断存档，也一路打到了24层。但是我忘了把最后的boss封印了，导致根本打不过。于是读回存档，让boss变菜。结果发现还是打不过。我觉得是我的中间过程没有做到精打细算。于是又打算重来一遍
+第四遍这次我精打细算，仔仔细细，反复存档读档。觉得应该能通关了。结果只是比第三遍 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/02/15/03-%E5%AF%92%E5%81%87%E4%BD%9C%E5%93%81/" title="2022寒假期间的作品"><img class="post-bg" src="https://tt3.pages.dev/img/winter.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022寒假期间的作品"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/15/03-%E5%AF%92%E5%81%87%E4%BD%9C%E5%93%81/" title="2022寒假期间的作品">2022寒假期间的作品</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-02-15T09:48:04.000Z" title="Created 2022-02-15 17:48:04">2022-02-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/%E5%81%87%E6%9C%9F/">假期</a></span></div><div class="content">学习主要学习了python语言，电脑的基本使用
+成果python的主要成果上传到GitHub上了，在PC仓库里
+有自己编写的坦克大战，但还没来得及编完，就开学了源码链接，其中my21.py是最新版
+当然，更多的还是在PC仓库里
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/02/14/02-print%E5%87%BD%E6%95%B0/" title="print函数的简单用法"><img class="post-bg" src="https://tt3.pages.dev/img/print.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="print函数的简单用法"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/14/02-print%E5%87%BD%E6%95%B0/" title="print函数的简单用法">print函数的简单用法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-02-14T02:25:15.000Z" title="Created 2022-02-14 10:25:15">2022-02-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/python/">python</a></span></div><div class="content">print函数的基本使用12print(&#x27;xxxx&#x27;)print(&quot;xxxx&quot;)
+以上代码都可以打印出
+12xxxxxxxx
+即为引号内的内容被显示在屏幕上
+如图
+必须指出的是，这里的引号和括号必须是英文状态下输入的，否则会出错
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/02/13/01-%E5%AE%89%E8%A3%85python/" title="安装python解释器"><img class="post-bg" src="https://pic2.zhimg.com/v2-1a9bf5312114564fb132692b355b5199_720w.jpg?source=172ae18b" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="安装python解释器"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/13/01-%E5%AE%89%E8%A3%85python/" title="安装python解释器">安装python解释器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-02-13T06:36:15.000Z" title="Created 2022-02-13 14:36:15">2022-02-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/python/">python</a></span></div><div class="content">python的版本选择目前Python有两个版本，一个是2.x，一个是3.x。这两个版本是不兼容的。由于3.x版越来越普及，而且在2020年1月1日，官方宣布，停止Python2的更新。所以我们以Python 3版本为基础。
+windows系统安装pythonpython下载官网
+
+Windows x86-64 表示64位的Python安装程序。
+Windows x86 表示32位的Python安装程序。
+executable installer 表示可执行程序，一般我们都是选择这个。
+embeddable zip file 表示免安装版本，可以直接集成到其他程序中。
+web-based installer 表示下载的是一个安装器，然后通过这个安装器再从网络上下载Python安装包。
+
+但是python官网下载会特别慢，因为是从国外源下载的，从国内的镜像站点下载会特别快
+这里推荐华为云,上面有各种版本的python
+打开下载的exe文件，就开始安装Python了。
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="card-widget" id="newYear"><div class="item-headline"><i></i><span></span></div><div class="item-content"><div id="newYear-main"><div class="mask"></div> <p class="title"></p> <div class="newYear-time"></div> <p class="today" style="text-align: right;"></p> </div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/11/10/hello-world/" title="Hello World">Hello World</a><time datetime="2023-11-10T13:47:13.075Z" title="Created 2023-11-10 21:47:13">2023-11-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/01/19/18-%E9%9A%8F%E6%8B%8D/" title="随拍">随拍</a><time datetime="2023-01-19T12:11:23.000Z" title="Created 2023-01-19 20:11:23">2023-01-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/01/04/17-%E9%98%B3%E4%BA%86%EF%BC%8C%E9%AB%98%E7%83%A740%E5%BA%A6%E7%AE%97%E4%B8%8D%E7%AE%97%E9%87%8D%E7%97%87%EF%BC%9F/" title="阳了，高烧40度算不算重症？"><img src="https://s2.loli.net/2023/01/04/tIMAm5h1Ljze7du.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阳了，高烧40度算不算重症？"/></a><div class="content"><a class="title" href="/2023/01/04/17-%E9%98%B3%E4%BA%86%EF%BC%8C%E9%AB%98%E7%83%A740%E5%BA%A6%E7%AE%97%E4%B8%8D%E7%AE%97%E9%87%8D%E7%97%87%EF%BC%9F/" title="阳了，高烧40度算不算重症？">阳了，高烧40度算不算重症？</a><time datetime="2023-01-04T01:16:57.000Z" title="Created 2023-01-04 09:16:57">2023-01-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/01/03/16-%E5%AF%B9%E8%AF%9D%E6%A1%86%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/" title="对话框外挂标签">对话框外挂标签</a><time datetime="2023-01-03T07:33:46.000Z" title="Created 2023-01-03 15:33:46">2023-01-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/01/03/15-%E6%B8%90%E5%8F%98%E8%89%B2%E7%89%88%E6%9D%83%E7%BE%8E%E5%8C%96/" title="butterfly渐变色版权美化">butterfly渐变色版权美化</a><time datetime="2023-01-03T06:37:46.000Z" title="Created 2023-01-03 14:37:46">2023-01-03</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/categories/" title="View More">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">教程</span><span class="card-category-list-count">8</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/butterfly/"><span class="card-category-list-name">butterfly</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/python/"><span class="card-category-list-name">python</span><span class="card-category-list-count">2</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E5%AD%A6/"><span class="card-category-list-name">数学</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%B8%B8%E6%88%8F/"><span class="card-category-list-name">游戏</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%B8%B8%E6%88%8F/%E7%BD%91%E9%A1%B5%E6%B8%B8%E6%88%8F/"><span class="card-category-list-name">网页游戏</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/"><span class="card-category-list-name">生活</span><span class="card-category-list-count">6</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/%E5%81%87%E6%9C%9F/"><span class="card-category-list-name">假期</span><span class="card-category-list-count">2</span></a></li></ul></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 1.1em; color: #999">游戏</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 1.1em; color: #999">学习</a> <a href="/tags/%E9%9A%8F%E6%8B%8D/" style="font-size: 1.1em; color: #999">随拍</a> <a href="/tags/%E7%89%B9%E6%95%88/" style="font-size: 1.1em; color: #999">特效</a> <a href="/tags/gitee/" style="font-size: 1.1em; color: #999">gitee</a> <a href="/tags/python/" style="font-size: 1.3em; color: #99a1ac">python</a> <a href="/tags/%E6%96%B0%E5%86%A0/" style="font-size: 1.3em; color: #99a1ac">新冠</a> <a href="/tags/%E4%B8%89%E5%8E%9F%E5%A1%94/" style="font-size: 1.1em; color: #999">三原塔</a> <a href="/tags/%E8%80%81%E5%AE%B6/" style="font-size: 1.1em; color: #999">老家</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 1.2em; color: #999da3">数学</a> <a href="/tags/%E5%AF%92%E5%81%87/" style="font-size: 1.1em; color: #999">寒假</a> <a href="/tags/%E8%AF%AD%E6%96%87/" style="font-size: 1.1em; color: #999">语文</a> <a href="/tags/butterfly/" style="font-size: 1.4em; color: #99a5b6">butterfly</a> <a href="/tags/%E9%AB%98%E8%80%83/" style="font-size: 1.1em; color: #999">高考</a> <a href="/tags/hexo/" style="font-size: 1.5em; color: #99a9bf">hexo</a> <a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 1.1em; color: #999">视频</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 1.3em; color: #99a1ac">生活</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">November 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">April 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">February 2022</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">19</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-11-10T15:36:56.148Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
