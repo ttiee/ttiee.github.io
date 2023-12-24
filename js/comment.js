@@ -1,0 +1,1 @@
+var jrsc_plac="请输入...\n(请勿发表不当内容)";document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
